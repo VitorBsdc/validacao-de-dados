@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(90deg, #52E5E7 10%, #130CB7 100%);
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5%;
+}/*Body*/
+
+.container {
+    display: flex;
+    justify-content: center;
+}/*Div pai*/
+
+.box {
+    text-align: center;
+    background-color: cornflowerblue;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0.0em 0.0em 0.8em;
+    padding: 25px;
+}/*Div filho*/
+
+input {
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}/*Inputs*/
+
+button {
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    cursor: pointer;
+}/*Os dois botões*/
+#botao1:hover {
+    background-color: green;
+    color: white;
+}/*Botão enviar*/
+#botao2:hover {
+    background-color: red;
+    color: white;
+}/*Botão limpar*/
+
+#resultado1, #resultado2, #resultado3, #resultado4, #resultado5 {
+    text-align: left;
+}/*Resultados*/

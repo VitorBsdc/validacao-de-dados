@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon-32x32.png"><!--Icon da página-->
+    <link rel="stylesheet" href="style.css" /><!--Style externo-->
+    <title>Validação de Dados</title><!--Title da Página-->
+  </head>
+  <body>
+      <div class="container"><!--Div pai-->
+        <div class="box"><!--Div filho-->
+          <h1>Forms</h1><!--Title-->
+          <input id="nome" name="nome" type="text" placeholder="Nome(curso)"
+          class="campo" onkeypress="return ApenasLetras(event,this);"><!--Input nome do curso-->
+          <br /><br />
+          <input id="duracao" type="number" min="1" placeholder="Duração(horas)" /><!--Input duração do curso-->
+          <br /><br />
+          <input id="inicio" type="date" min="2020-01-01" /><!--Input data inicial-->
+          <br /><br />
+          <input id="termino" type="date" /><!--Input data final-->
+          <br /><br />
+          <input id="professor" name="nome" type="text" placeholder="Professor(docente)"
+          class="campo" onkeypress="return ApenasLetras(event,this);"><!--Input professor-->
+          <br /><br />
+
+          <button id="botao1" onclick="insercao()">Enviar!</button><!--Enviar-->
+          <button id="botao2" onclick="limpar()">Limpar!</button><!--Limpar-->
+
+          <h3 id="resultado1"></h3>
+          <h3 id="resultado2"></h3>
+          <h3 id="resultado3"></h3>
+          <h3 id="resultado4"></h3>
+          <h3 id="resultado5"></h3><!--Resultados-->
+        </div>
+      </div>
+      
+    <script src="script.js"></script><!--Script externo-->
+  </body>
+</html>
